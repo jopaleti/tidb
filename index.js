@@ -36,6 +36,6 @@ app.use("/api/v1/chat", chatRouter);
 app.use("/api/v1/journal", journalRouter);
 app.use("/api/v1/movie", movieRouter);
 
-app.listen("4000", () => {
+app.listen(process.env.PORT || 4000, () => {
 	console.log("Server listening on http://localhost:4000");
 });
